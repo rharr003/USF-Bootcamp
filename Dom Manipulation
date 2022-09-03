@@ -1,0 +1,25 @@
+const container1 = document.getElementById("container");
+const container2 = document.querySelector("#container");
+
+const secondListItems = document.querySelectorAll("li.second");
+
+const thirdOLItem = document.querySelector("ol li.third");
+
+//container2.innerText = "hello";
+
+const div = document.querySelector("div.footer");
+
+div.classList.add("main");
+
+const listSection = document.querySelector("ul");
+
+const html = "<li>four</li>";
+listSection.insertAdjacentHTML("beforeend", html);
+
+const ol = document.querySelector("ol");
+
+for (let child of ol.children) {
+  child.style.backgroundColor = "green";
+}
+
+div.remove();
