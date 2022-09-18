@@ -1,1 +1,6 @@
 const pi = 3.14
+var is function scoped and gets hoisted and is able to be redclared, let cannot be redeclared, is not hoisted and is block scoped.
+var is function scoped and gets hoisted and is able to be redclared, const cannot be redeclared, is not hoisted and is block scoped
+let can be reassiged const cannot
+hoisting is when a variable declaration is processed before initialization allowing the variable to be accessed prior to
+intilization returning undefined.
