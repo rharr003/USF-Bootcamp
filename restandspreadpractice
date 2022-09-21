@@ -1,0 +1,36 @@
+function filterOutOdds(...args) {
+  return args.filter((value) => value % 2 === 0);
+}
+
+console.log(filterOutOdds(1, 2, 3, 4, 5));
+
+function findMin(...args) {
+  return args.reduce((acc, cur) => (cur < acc ? cur : acc));
+}
+
+console.log(findMin(4, 6, 7, 4, 3));
+
+function mergeObjects(obj1, obj2) {
+  return { ...obj1, ...obj2 };
+}
+
+function doubleAndReturnArgs(arr, ...args) {
+  const fullArr = [...arr, ...args];
+  return fullArr.map((value) => value * 2);
+}
+console.log(doubleAndReturnArgs([1, 2, 3, 4], 5, 6));
+
+const removeRandom = (items) => {
+  let index = Math.floor(Math.random() * items.length);
+  return [...items.slice(0, index), ...items.slice(index + 1)];
+};
+
+const extend = (arr1, arr2) => [...arr1, ...arr2];
+
+const addKeyVal = (obj, key, val) => ({ ...obj, [key]: val });
+
+const removeKey = (obj, key) => {
+  const newObj = { ...obj };
+  delete newObj[key];
+  return newObj;
+};
