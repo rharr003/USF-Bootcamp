@@ -1,0 +1,11 @@
+1: Hyper Text Transfer Protocol
+2: Uniform Resource Locator
+3: Domain Name Service
+4: Allows you to pass key value pairs following a ?
+5: Get-retrieve data, Post-submit data to a server
+6: A request from one computer to a server for information or to send data
+7: The response the server gives following a request
+8: Additional information sent with a request, could specify things like
+ 	format, language, region, etc.
+9: The url is turned into an IP address and then a request is made. A response is
+	recieved and rendered if there is no error.
